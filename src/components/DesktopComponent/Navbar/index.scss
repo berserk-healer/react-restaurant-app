@@ -1,0 +1,52 @@
+.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex; align-items: center; justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    min-height: 6.5rem;
+
+    .logo {
+        color: #192a56;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    nav .navLink {
+        font-size: 1.7rem;
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        color: #666;
+
+        &.active,
+        &:hover {
+            color: #fff;
+            background: #27ae60;
+        }
+    }
+
+    .icons {
+        cursor: pointer;
+        margin-left: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        color: #192a56;
+
+        &:hover {
+            color: #27ae60;
+            transform: rotate(360deg)
+        }
+    }
+
+    #menuBars {
+        display: none;
+    }
+
+    span {
+        font-size: 1.7rem;
+        color: red;
+    }
+}
+
